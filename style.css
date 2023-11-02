@@ -1,0 +1,14 @@
+@import url("styles/header.css");
+
+:root {
+    --main-background: #D3D5D8
+}
+
+body {
+    
+    font-family: 'Caveat', cursive;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Share Tech', sans-serif;
+    overflow-x: hidden;
+    background-color: var(--main-background);
+}
