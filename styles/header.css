@@ -6,24 +6,25 @@
 }
 header {
     display: flex;
-    height: 400px;
+    height: 910px;
+    
 }
 
 .header_banner {
-    
     animation: header_banner 60s linear infinite;
-    background-image: url('/img/hall\ 02.jpg');
+    background-image: url('/img/header_background.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
     scale: 1;
+    position: relative;
 }
 
 @keyframes header_banner {
     100% {
-        scale: 1.5;
+        scale: 1.6;
       }
 }
 

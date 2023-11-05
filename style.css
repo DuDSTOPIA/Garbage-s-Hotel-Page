@@ -1,14 +1,23 @@
 @import url("styles/header.css");
+@import url("styles/apresentation.css");
+@import url("styles/nav_bar.css");
 
 :root {
     --main-background: #D3D5D8
 }
-
+/* Each section of the page is here */
+/* The componentes of the sections, have their on file */
 body {
-    
     font-family: 'Caveat', cursive;
     font-family: 'Rajdhani', sans-serif;
     font-family: 'Share Tech', sans-serif;
     overflow-x: hidden;
     background-color: var(--main-background);
+    
+}
+
+main {
+    width: 100vw;
+    position: absolute;
+    background-color: #ffece3;
 }

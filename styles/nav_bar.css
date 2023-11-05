@@ -1,0 +1,26 @@
+
+.nav_bar {
+    font-family: 'Caveat', cursive;
+    font-size: 1em;
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 0 100px #DC4400;
+}
+
+.nav_bar > h1 {
+    color: aliceblue;
+    text-shadow: 1px 1px 3px var(--text-shadow),
+    -1px 1px 3px var(--text-shadow),
+    -1px -1px 0 var(--text-shadow),
+    1px -1px 0 var(--text-shadow);
+}
+
+.nav_bar > a {
+    text-decoration: none;
+    color: #DC4400;
+}
