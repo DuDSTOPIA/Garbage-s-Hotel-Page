@@ -1,0 +1,33 @@
+footer {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5vh;
+    background-color: #ca6f45
+}
+
+.div_footer {
+    width: 10vw;
+    text-align: center;
+}
+.footer_link_title, .contact_title {
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 2em;
+    color: aliceblue;
+    text-shadow: 1px 1px 5px var(--text-shadow),
+    -1px 1px 5px var(--text-shadow),
+    -1px -1px 0 var(--text-shadow),
+    1px -1px 0 var(--text-shadow);
+}
+
+.footer_link {
+    text-decoration: none;
+    font-family: 'Caveat', cursive;
+    color: black;
+    display: block;  
+}
+
+.contact_info {
+    font-family: 'Caveat', cursive;
+}

@@ -1,6 +1,7 @@
 @import url("styles/header.css");
 @import url("styles/apresentation.css");
 @import url("styles/nav_bar.css");
+@import url("styles/footer.css");
 
 :root {
     --main-background: #D3D5D8

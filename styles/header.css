@@ -28,6 +28,10 @@ header {
       }
 }
 
+.contact_icon {
+    height: 1.5vh;
+}
+
 .address-container{
     width: 100vw;
     height: 5vh;
@@ -42,6 +46,7 @@ header {
 }
 
 .address {
+    align-items: center;
     color: var(--text-color);
     text-shadow: 1px 1px 2px var(--text-shadow),
     -1px 1px 2px var(--text-shadow),
@@ -49,8 +54,8 @@ header {
     1px -1px 0 var(--text-shadow);
 }
 
-.phone {
-    padding-right: 10px;
+.address_contact {
+    padding: 10px;
 }
 
 .hotel_name {
