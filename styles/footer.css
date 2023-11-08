@@ -11,9 +11,16 @@ footer {
     width: 10vw;
     text-align: center;
 }
+
+.copyright_info {
+    padding-top: 6vh;
+    text-align: center;
+    width: 25vw;
+}
 .footer_link_title, .contact_title {
     font-family: 'Bilbo Swash Caps', cursive;
-    font-size: 2em;
+    padding: 1vh 0;
+    font-size: 1.5em;
     color: aliceblue;
     text-shadow: 1px 1px 5px var(--text-shadow),
     -1px 1px 5px var(--text-shadow),
@@ -30,4 +37,12 @@ footer {
 
 .contact_info {
     font-family: 'Caveat', cursive;
+}
+
+.contact_info:hover, .footer_link:hover {
+    color: aliceblue;
+    text-shadow: 1px 1px 5px var(--text-shadow),
+    -1px 1px 5px var(--text-shadow),
+    -1px -1px 0 var(--text-shadow),
+    1px -1px 0 var(--text-shadow);
 }
