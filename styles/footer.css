@@ -1,23 +1,28 @@
-footer {
-    width: 100vw;
-    height: 30vh;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 5vh;
-    background-color: #ca6f45
-}
 
 .div_footer {
-    width: 10vw;
+    width: 13vw;
     text-align: center;
 }
 
 .copyright_info {
-    padding-top: 6vh;
     text-align: center;
     width: 25vw;
 }
-.footer_link_title, .contact_title {
+
+.social_media {
+    display: flex;
+    justify-content: space-evenly;
+    height: 5vh;
+}
+
+.social_media_icon {
+    height: 1.5em;
+    padding: 1em 1em;
+}
+.social_media_icon:hover {
+    height: 3vh;
+}
+.footer_link_title, .contact_title{
     font-family: 'Bilbo Swash Caps', cursive;
     padding: 1vh 0;
     font-size: 1.5em;
@@ -35,7 +40,7 @@ footer {
     display: block;  
 }
 
-.contact_info {
+.contact_info, .copy_link {
     font-family: 'Caveat', cursive;
 }
 

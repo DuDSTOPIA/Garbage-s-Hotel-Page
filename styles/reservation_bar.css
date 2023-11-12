@@ -1,0 +1,23 @@
+
+.reservation_bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(#d3784d 10%, #ffece3);
+    width: 100vw;
+    height: 5vh;
+}
+
+.reservation_div {
+    display: flex;
+    align-items: center;
+}
+
+.reservation_number {
+    width: 5vw;
+}
+
+.reservation_link {
+    font-family: var(--text-font-family);
+    margin-right: 2vw;
+}
