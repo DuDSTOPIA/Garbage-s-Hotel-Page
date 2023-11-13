@@ -1,0 +1,32 @@
+.about_amenities {
+    width: 100vw;
+    height: 30vh;
+    text-align: center;
+    background-color: var(--background-about-us);
+}
+
+.about_amenities_title {
+    font-family: var(--text-font-family);
+    padding-top: 2em;
+}
+
+.about_amenities_div {
+    height: 25vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about_amenities_div_icon {
+    width: 10vw;
+    text-align:center;
+}
+
+.about_amenities_icon {
+    height: 4vh;
+}
+
+.about_icon_text {
+    text-align: center;
+    word-wrap:normal;
+}

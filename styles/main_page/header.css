@@ -1,4 +1,10 @@
 /* Desktop CSS */
+#main_page {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
 .header_banner {
     animation: header_banner 60s linear infinite;
     background-image: url('/img/header_background.jpg');

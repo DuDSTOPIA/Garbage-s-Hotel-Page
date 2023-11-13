@@ -1,0 +1,39 @@
+#main_about {
+    width: 100vw;
+    height: 135vh;
+}
+
+.about_info {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: var(--background-about-us);
+}
+
+.about_img {
+    height: 45vh;
+    position: relative;
+    margin-right: 30vw;
+}
+
+.about_info_div {
+    width: 40vw;
+    text-align: justify;
+    margin-left: 30vw;
+    position: absolute;
+    background-color: var(--background-about-us);
+    padding: 2%;
+}
+
+.about_info_div_title {
+    font-family: var(--text-font-family);
+    margin-bottom: 1em;
+    
+}
+
+.about_info_div_paragraph {
+    font-family: var(--text-font-family);
+    color: white;
+}

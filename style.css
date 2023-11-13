@@ -1,8 +1,11 @@
-@import url("styles/header.css");
-@import url("styles/presentation.css");
+@import url("styles/main_page/header.css");
+@import url("styles/main_page/presentation.css");
 @import url("styles/nav_bar.css");
 @import url("styles/footer.css");
 @import url("styles/reservation_bar.css");
+@import url("styles/about_page/about_us.css");
+@import url("styles/about_page/about_info.css");
+@import url("styles/about_page/about_amenities.css");
 
 :root {
     --main-background: #D3D5D8;
@@ -13,8 +16,10 @@
     --text-font-family: 'Caveat', cursive;
     --text-color: #DC4400;
     --nav-bar-background: #ffece3;
+    --background-reservation-bar: rgb(53, 44, 44);
+    --background-about-us: #b96944;
 }
-/* Each section of the page is here */
+/* We have info here that cannot be changed*/
 /* The componentes of the sections, have their on file */
 body {
     font-family: 'Caveat', cursive;
@@ -27,11 +32,6 @@ body {
     overflow-x: hidden;
     
 }
-header {
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-}
 
 .nav_bar {
     height: 5vh;
@@ -43,14 +43,6 @@ header {
     position:relative;
     
 
-}
-
-main {
-    /* This margin top have the same height of nav_bar */
-    /* To not hide it*/
-    width: 100vw;
-    position:relative;
-    background-color: var(--nav-bar-background);
 }
 
 footer {

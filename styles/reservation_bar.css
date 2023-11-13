@@ -3,9 +3,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(#d3784d 10%, #ffece3);
+    background-color: var(--background-reservation-bar);
     width: 100vw;
     height: 5vh;
+    border: solid 2px var(--text-shadow);
+    border-radius: 5px;
 }
 
 .reservation_div {
@@ -20,4 +22,17 @@
 .reservation_link {
     font-family: var(--text-font-family);
     margin-right: 2vw;
+    color: var(--text-shadow);
 }
+.reservation_button {
+    font-family: var(--text-font-family);
+    margin-right: 2vw;
+    font-weight:1000;
+    color: var(--text-shadow);
+    border-radius: 5px;
+}
+.reservation_button:hover {
+    background-color: var(--text-color);
+    color: var(--nav-bar-background);
+}
+

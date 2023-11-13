@@ -1,0 +1,20 @@
+.header_about {
+    background-image: url('/img/header_background.jpg');
+    width: 100vw;
+    height: 30vh;
+    position: relative;
+    background-position: center;
+}
+
+.hotel_name_about {
+    font-family: var(--title-font-family);
+    font-size: 9em;
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+    padding-top: 10vh;
+    text-shadow: 1px 1px 6px var(--nav-bar-background),
+    -1px 1px 6px var(--nav-bar-background),
+    -1px -1px 6px var(--nav-bar-background),
+    1px -1px 6px var(--nav-bar-background);
+}
