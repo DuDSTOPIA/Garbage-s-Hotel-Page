@@ -18,6 +18,7 @@
     --nav-bar-background: #ffece3;
     --background-reservation-bar: rgb(53, 44, 44);
     --background-about-us: #b96944;
+    --background-footer: #ca6f45;
 }
 /* We have info here that cannot be changed*/
 /* The componentes of the sections, have their on file */
@@ -25,8 +26,7 @@ body {
     font-family: 'Caveat', cursive;
     font-family: 'Rajdhani', sans-serif;
     font-family: 'Share Tech', sans-serif;
-    background-color: var(--main-background);
-    height: 200vh;
+    background-color: var(--background-footer);
     display: block;
     width: 100vw;
     overflow-x: hidden;
@@ -47,11 +47,11 @@ body {
 
 footer {
     width: 100vw;
-    height: 20vh;
+    height: 10vh;
     display: flex;
     justify-content: space-around;
     padding-top: 5vh;
-    background-color: #ca6f45;
+    background-color: var(--background-footer);
 }
 
 .reservation {
