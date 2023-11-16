@@ -6,6 +6,7 @@
 @import url("styles/about_page/about_us.css");
 @import url("styles/about_page/about_info.css");
 @import url("styles/about_page/about_amenities.css");
+@import url("styles/Accomodations_page/Accomodations.css");
 
 :root {
     --main-background: #D3D5D8;

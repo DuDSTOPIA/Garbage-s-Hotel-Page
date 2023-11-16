@@ -17,8 +17,8 @@
     overflow: hidden;
     scale: 1;
     position: relative;
-    /* for some reason, needs to width here to image works */
-    /* i need understand why */
+    /*for some reason, needs to width here to image works*/
+    /*i still don't see why*/
     width: 100vw;
 }
 

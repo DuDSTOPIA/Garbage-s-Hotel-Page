@@ -30,6 +30,7 @@
     font-weight:1000;
     color: var(--text-shadow);
     border-radius: 5px;
+    
 }
 .reservation_button:hover {
     background-color: var(--text-color);
