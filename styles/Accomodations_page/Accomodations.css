@@ -1,7 +1,7 @@
 
 #rooms_page {
     width: 100vw;
-    height: 200vh;
+    height: 180vh;
     text-align: center;
     background-color: var(--background-about-us);
 }
@@ -18,18 +18,21 @@
 .all_rooms {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .room_div {
-    width: 25vw;
-    height: 30vh;
+    width: 20vw;
+    height: 25vh;
     background-color: var(--address-background);
     border: solid 2px var(--text-shadow);
-    border-radius: 20% 10%;
+    border-radius: 10% 20%;
     text-align: center;
     box-shadow: 3px 3px 20px var(--address-background),
     -3px -3px 20px var(--address-background);
-    background-position: center;    
+    background-position: center;
+    margin: 5em 2em;
+    min-width: 18vw;
 }
 
 .room_div:hover {
@@ -37,6 +40,8 @@
     box-shadow: 3px 3px 20px var(--text-shadow),
     -3px -3px 20px var(--text-shadow);
     transition: all 0.5s ease;
+    width: 19vw;
+
 }
 
 .room_div_title {
@@ -46,16 +51,41 @@
 }
 
 .room_div_text {
-    width: 25vw;
+    width: 20vw;
     height: 5vh;
+    flex-wrap: wrap;
+    font-size: -1em;
     font-family: var(--text-font-family);
     font-size: small;
     color: var(--main-background);
 }
 
-.room_div_img {
-    height: 20vh;
+.room_div_img_div {
+    display: flex;
 }
+
+.room_div_price {
+    width: 20vw;
+    color: var(--addresstext-color);
+    background-color: var(--address-background);
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    text-shadow: 1px 1px 2px var(--text-shadow),
+    -1px 1px 2px var(--text-shadow),
+    -1px -1px 0 var(--text-shadow),
+    1px -1px 0 var(--text-shadow);
+    margin-top:  15vh;
+}
+
+.room_div_img {
+    width: 20vw;
+    border-radius: 15px;
+    box-shadow: -1px 1px 5px black;
+    position: relative;
+    min-width: 18vw;
+}
+
 
 /* Reservation div of accomodation */
 
@@ -64,11 +94,17 @@
     height: 10vh;
     border: solid 2px var(--text-shadow);
     border-radius: 20% 10%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    width: 20vw;
+    flex-wrap: wrap;  
+    font-size: 0.8em;
+}
 
+.block01, .block02 {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5vh;
+    min-width:min-content;
 }
 
 .room_reservation_title {
@@ -76,12 +112,17 @@
 }
 
 .acomodation_room_input {
-    width: 5vw;
+    width: 3vw;
     height: 1.5vh;
     text-align: center;
+    margin: 2%;
 }
 
 .acomodation_room_button {
     color: var(--text-color);
     height: 2.2vh;
+}
+.acomodation_room_button:hover {
+    background-color: var(--text-color);
+    color: var(--nav-bar-background);
 }
