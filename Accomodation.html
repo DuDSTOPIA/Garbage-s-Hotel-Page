@@ -23,17 +23,66 @@
         <a class="nav_button" href="/sobre.html">Sobre nós</a>
         <a class="nav_button" href="/Acomodacoes.html">Acomodações</a>
         <a class="nav_button" href="#">Reservas</a>
-        <a class="nav_button" href="#">Trabalhe Conosco</a>
+        <a class="nav_button" href="/career.html">Trabalhe Conosco</a>
     </nav>
 
     <!-- Main content-->
     <main id="rooms_page">
         <h1 class="title_div">Conheça nossas acomodações:</h1>
         <section class="all_rooms">
-            
+            <!-- Java Script will make the room list here -->
         </section>
-
-
+        <section class="meeting_reservation">
+            <div class="form_meeting">
+                <h1 class="form_meeting_title">Reuniões/Eventos</h1>
+                <section class="slider_form">
+                        <div class="event_div">
+                            <h1 class="event_type_title">Tipo de Evento:</h1>
+                            <select class="event_type_selector" name="select_event" id="">
+                                <option class="event_type_option" value="Cerimonia"></option>
+                                <option class="event_type_option" value="Cerimonia">Cerimonia</option>
+                                <option class="event_type_option" value="Reunião">Reunião</option>
+                            </select>
+                        </div>
+                        <div class="event_div">
+                            <h1 class="quantity_rooms_title">Quantidade de Salas:</h1>
+                            <input class="event_type_selector" type="number" name="Numero" value="0" min="0" max="2">
+                        </div>
+                        <div class="event_div">
+                            <h1 class="quantity_people_title">Quantidade de Pessoas:</h1>
+                            <input class="event_type_selector" type="number" name="number" value="0" min="0" max="150">
+                        </div>
+                        <div class="event_div">
+                            <h1 class="event_date_title">Data do evento:</h1>
+                            <input class="event_date_time" type="datetime-local" name="" id="">
+                        </div>
+                        <div class="event_div">
+                            <h1 class="event_lunch_title">Café e lanche</h1>
+                            <input class="event_lunch_checkbox" type="checkbox" name="almoço" id="">
+                            <h1 class="event_lunch_title">Almoço</h1>
+                            <input class="event_lunch_checkbox" type="checkbox" name="almoço" id="">
+                            <h1 class="event_lunch_title">Jantar</h1>
+                            <input class="event_lunch_checkbox" type="checkbox" name="almoço" id="">
+                        </div>
+                        
+                        <button class="reservation_button" type="submit">Pedir Orçamento</button>                    
+                </section>
+            </div>
+            <div class="wallpaper_slider">
+                <img src="/img/img_slider/sala_reuniao01.jpg" alt="image slider" class="slider_img">
+                <img src="/img/img_slider/sala_reuniao02.jpg" alt="image slider" class="slider_img">
+                <img src="/img/img_slider/sala_reuniao03.jpg" alt="image slider" class="slider_img">
+                <img src="/img/img_slider/sala_reuniao04.jpg" alt="image slider" class="slider_img">
+                <img src="/img/img_slider/sala_reuniao05.jpg" alt="image slider" class="slider_img">
+                <img src="/img/img_slider/sala_reuniao06.jpg" alt="image slider" class="slider_img">
+                <img src="/img/img_slider/sala_reuniao07.jpg" alt="image slider" class="slider_img">
+                <img src="/img/img_slider/sala_reuniao08.jpg" alt="image slider" class="slider_img">
+                <img src="/img/img_slider/sala_reuniao09.jpg" alt="image slider" class="slider_img">
+                <img src="/img/img_slider/sala_reuniao10.jpg" alt="image slider" class="slider_img">
+                
+                
+            </div>
+        </section>
     </main>
     <!-- Footer for all the pages-->
     <footer>
@@ -41,7 +90,7 @@
             <h1 class="footer_link_title">Links:</h1>
             <a class="footer_link" href="/index.html">Home</a>
             <a class="footer_link" href="/sobre.html">Sobre nós</a>
-            <a class="footer_link" href="">Acomodações</a>
+            <a class="footer_link" href="/Accomodation.html">Acomodações</a>
             <a class="footer_link" href="">Trabalhe Conosco</a>
         </div>
         <div class="copyright_info">
@@ -50,7 +99,7 @@
                 <a href="https://www.linkedin.com/in/eduardo-domiciano/"><img class="social_media_icon" src="/img/linkedin-icon.svg" alt="Linkedin"></a>
                 <a href="https://github.com/DuDSTOPIA"><img class="social_media_icon" src="/img/github-icon.svg" alt="GitHub"></a>
             </div>
-            <p class="copy_link">Nenhum direitos reservados - 2023</p>
+            <p class="copy_link">Nenhum direito reservado - 2023</p>
             <p class="copy_link">Desenvolvido por Eduardo Domiciano</p>
         </div>
         <div class="div_footer">
@@ -82,6 +131,6 @@
             <button class="reservation_button" type="submit">Reservar</button>
         </nav>
     </section>
-    <script src="main.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 </html>

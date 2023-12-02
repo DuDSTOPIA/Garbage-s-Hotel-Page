@@ -7,6 +7,8 @@
 @import url("styles/about_page/about_info.css");
 @import url("styles/about_page/about_amenities.css");
 @import url("styles/Accomodations_page/Accomodations.css");
+@import url("styles/Accomodations_page/slider.css");
+@import url("styles/carrer/career.css");
 
 :root {
     --main-background: #D3D5D8;
@@ -48,7 +50,7 @@ body {
 
 footer {
     width: 100vw;
-    height: 10vh;
+    height: 20vh;
     display: flex;
     justify-content: space-around;
     padding-top: 5vh;
@@ -59,5 +61,3 @@ footer {
     position: fixed;
     bottom: 0;
 }
-
-

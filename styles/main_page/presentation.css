@@ -33,9 +33,9 @@
     height: 25vh;
     writing-mode: vertical-lr;
     text-shadow: 1px 1px 5px var(--text-shadow),
-    -1px 1px 5px var(--text-shadow),
-    -1px -1px 0 var(--text-shadow),
-    1px -1px 0 var(--text-shadow);
+                -1px 1px 5px var(--text-shadow),
+                -1px -1px 0 var(--text-shadow),
+                1px -1px 0 var(--text-shadow);
     margin-left: 50%;
 }
 
