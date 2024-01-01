@@ -3,7 +3,7 @@
 export function all_rooms() {
     let roomsModels = [
         {model:'Express Duplo', text:'Modelo com 02 camas de solteiro, frigobar, tv e ar condicionado', img:'/img/twin-bed.jpg', fromPrice: 269.99, toPrice: 249.99, maxAdult: 2, maxChildren: 2},
-        {model:'Express Triplo', text:'Modelo com 03 camas de solteiro, frigobar, tv e ar condicionado', img:'/img/triplo.jpg', fromPrice: 329.99, toPrice: 279.99, maxAdult: 3, maxChildren: 2},
+        {model:'Express Triplo', text:'Modelo com 03 camas de solteiro, frigobar, tv e ar condicionado', img:'/img/Triplo.jpg', fromPrice: 329.99, toPrice: 279.99, maxAdult: 3, maxChildren: 2},
         {model:'Luxo Casal', text:'Modelo com 01 cama de casal, frigobar, tv e ar condicionado', img:'/img/double-bed.jpg', fromPrice: 349.99, toPrice: 299.99, maxAdult: 2, maxChildren: 2},
         {model:'Luxo Familia', text:'Modelo com 01 cama de casal, 01 cama de solteiro, frigobar, tv e ar condicionado', img:'/img/double_bed_and_single_bed.jpg', fromPrice: 399.99, toPrice: 359.99, maxAdult: 3, maxChildren: 2},
         {model:'Flat', text:'Modelo com 01 cama de casal, 02 cama de solteiro, mini-cozinha, sofá, tv e ar condicionado', img:'/img/flat.jpg', fromPrice: 499.00, toPrice: 449.00, maxAdult: 4, maxChildren: 4},
