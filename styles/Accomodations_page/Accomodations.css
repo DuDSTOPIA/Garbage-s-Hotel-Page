@@ -19,6 +19,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: 10vw 0;
 }
 
 .room_div {
@@ -115,7 +116,7 @@
     color: var(--text-color);
 }
 
-.acomodation_room_input {
+.acomodation_room_input, .acomodation_room_adult_input {
     width: 3vw;
     height: 1.5vh;
     text-align: center;
