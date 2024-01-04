@@ -14,6 +14,7 @@ export function all_rooms() {
     roomsModels.forEach(item => {
         var adultos = 1
         let div = document.createElement('div');
+        div.className = 'roomBox'
         let model =     `<div class="room_div">
                             <div class="room_div_info">
                                 <h1 class="room_div_title">${item.model}</h1>

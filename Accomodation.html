@@ -45,12 +45,23 @@
                             </select>
                         </div>
                         <div class="event_div">
+                            <h1 class="quantity_rooms_title">Nome:</h1>
+                            <input class="event_input_selector_text" type="text" name="Numero" >
+                        </div><div class="event_div">
+                            <h1 class="quantity_rooms_title">Email:</h1>
+                            <input class="event_input_selector_text" type="email" name="email" id="">
+                        </div>
+                        <div class="event_div">
+                            <h1 class="quantity_rooms_title">Telefone:</h1>
+                            <input class="event_input_selector_number" type="tel" name="telefone" id="">
+                        </div>
+                        <div class="event_div">
                             <h1 class="quantity_rooms_title">Quantidade de Salas:</h1>
-                            <input class="event_type_selector" type="number" name="Numero" value="0" min="0" max="2">
+                            <input class="event_input_selector_number" type="number" name="Numero" value="0" min="0" max="2">
                         </div>
                         <div class="event_div">
                             <h1 class="quantity_people_title">Quantidade de Pessoas:</h1>
-                            <input class="event_type_selector" type="number" name="number" value="0" min="0" max="150">
+                            <input class="event_input_selector_number" type="number" name="number" value="0" min="0" max="150">
                         </div>
                         <div class="event_div">
                             <h1 class="event_date_title">Data do evento:</h1>
@@ -111,26 +122,9 @@
         </div>
     </footer>
     <section class="reservation">
-        <nav class="reservation_bar">
-            <div class="reservation_div">
-                <h1 class="reservation_link">Check-in</h1>
-                <input class="reservation_calendar" type="date" name="chekin" id="chekin">
-            </div>
-            <div class="reservation_div">
-                <h1 class="reservation_link">Check-out</h1>
-                <input class="reservation_calendar" type="date" name="checkout" id="checkout">
-            </div>
-            <div class="reservation_div">
-                <h1 class="reservation_link">Adultos</h1>
-                <input class="reservation_number" type="number" name="adultos" id="adultos" value="1" min="1" max="3">
-            </div>
-            <div class="reservation_div">
-                <h1 class="reservation_link">Crianças</h1>
-                <input class="reservation_number" type="number" name="criancas" id="criancas" value="0" min="0" max="3">
-            </div>
-            <button class="reservation_button" type="submit">Reservar</button>
-        </nav>
+        <!-- Aqui será gerada a barra de reservas -->
     </section>
+    
     <script type="module" src="main.js">currentPrice()</script>
 </body>
 </html>

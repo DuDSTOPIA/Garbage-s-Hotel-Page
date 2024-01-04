@@ -6,7 +6,7 @@
     filter: drop-shadow(0px 0px 10px #000);
     overflow: hidden;
     width: 100vw;
-    height: 80vh;
+    height: 70vh;
     background-color: #1a1a1a;
 }
 
@@ -23,7 +23,7 @@
     text-align: center;
     align-items: center;
     width: 100vw;
-    height: 70vh;
+    height: 60vh;
     image-resolution: auto;
     margin: auto auto;
 }
@@ -31,7 +31,7 @@
 .form_meeting {
     position: absolute;
     width: 100vw;
-    height: 80vh;
+    height: 70vh;
     float: inline-start;
     color: white;
     align-items: center;
@@ -79,10 +79,13 @@
     align-items: center;
 }
 
-.event_type_selector{
-    width: 8vw;
+.event_input_selector_text, .event_input_selector_number{
     margin: 0 1vw;
     height: 2vh;
+}
+
+.event_input_selector_text {
+    width: 30vw;
 }
 
 .event_div {
