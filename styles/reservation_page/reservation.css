@@ -14,7 +14,7 @@
     margin: 5vh 0;
 }
 
-.reservation_selection_div, .reservation_selection_chekin, .reservation_selection_chekout {
+.reservation_selection_chekin, .reservation_selection_chekout {
     display: flex;
     align-items: center;
 }

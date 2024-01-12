@@ -1,4 +1,5 @@
 
+// ESSA FUNÇÃO ESTA SENDO GERADA NO ACCOMODATION.JS
 export function wallpaperSlider (listaImg, containerImg) {
     
     let contador = 0;
