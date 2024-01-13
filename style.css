@@ -10,6 +10,7 @@
 @import url("styles/Accomodations_page/slider.css");
 @import url("styles/carrer/career.css");
 @import url("/styles/reservation_page/reservation.css");
+@import url("/styles/reservation_page/reservation_model.css");
 
 :root {
     --main-background: #D3D5D8;

@@ -26,15 +26,7 @@
 <main id="reservation_container">       
    <section class="reservation_section">
         <div class="reservation_selection_header">
-            <div class="reservation_selection_chekin">
-                <h1 class="reservation_selection_title">Check-in:</h1>
-                <input class="reservation_selection_date" type="date" name="" id="">
-            </div>
-            <div class="reservation_selection_chekout">
-                <h1 class="reservation_selection_title">Check-out:</h1>
-                <input class="reservation_selection_date" type="date" name="" id="">
-            </div>
-        </div>
+            <h1 class="title_reservation_page">Reserve seu Quarto dos sonhos agora!</h1>
         <div class="reservation_selection_form" >
             <div class="reservation_selection_form_div">
                 <div class="reservation_selection_form_text">
@@ -58,8 +50,38 @@
         </div>
    </section>
    <section class="rooms_selected">
-
-   </section>
+        <div class="reservation_model">
+            <select class="reservation_model_select">
+                <option name="" class="room_title_select" id="">Express Duplo</option>
+                <option name="" class="room_title_select" id="">Express Triplo</option>
+                <option name="" class="room_title_select" id="">Luxo Casal</option>
+                <option name="" class="room_title_select" id="">Luxo Familia</option>
+                <option name="" class="room_title_select" id="">Flat</option>
+                <option name="" class="room_title_select" id="">Master</option>
+            </select>
+            <div class="rooms_selected_date">
+                <h1 class="rooms_selected_date_title">Check-in:</h1>
+                <input type="date" name="" id="">
+                <h1 class="rooms_selected_date_title">Check-out:</h1>
+                <input type="date" name="" id="">
+            </div>
+            <div class="reservation_model_room_info">
+                <img src='/img/twin-bed.jpg' alt="" srcset="" class="img_reservation_model">
+                <section class="guest_reservation_model">
+                    <div class="adults_title_reservation_model">
+                        <h1 >Adultos:</h1> <input class="guest_title_reservation_model" type="number" name="" id="" max="3" min="1" value="1">
+                    </div>
+                    <div class="adults_title_reservation_model">
+                        <h1>Crianças:</h1> <input class="guest_title_reservation_model" type="number" name="" id="" max="3" min="1" value="1">
+                    </div>
+                </section>
+            </div>
+            <div class="reservation_model_room_price">
+                <h1 class="reservation_model_room_price_text">Modelo com 02 camas de solteiro, frigobar, tv e ar condicionado</h1>
+                <h1>De R$000,00 por R$000,00 /Diaria.</h1>
+            </div>
+        </div>
+    </section>
 </main>
    
     <!-- Footer for all the pages-->
