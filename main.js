@@ -14,4 +14,3 @@ const reservation = new reservation_bar();
 
 
 
-

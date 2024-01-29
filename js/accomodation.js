@@ -6,7 +6,7 @@ import {wallpaperSlider} from "./slider.js";
 // TODAS AS FUNÇÕES DA PAGINA ACCOMODATION ESTAO DIRETAMENTE LIGADAS A ESSE ARQUIVO
 
 // GERA TODOS OS QUARTOS COM FEATURES NESCESSARIAS
-export function all_rooms(lista, id) {    
+function all_rooms(lista, id) {    
     
     lista.forEach(item => {
         const div = document.createElement('div')
@@ -50,7 +50,6 @@ export function all_rooms(lista, id) {
                 rooms_value(identifiedObj[x])
             })
             function rooms_value(whatBox) {
-                console.log(x)
                 if(whatBox.value == 1) {
                     currentApartamentValue[x].innerHTML = `De ${lista[x].fromPriceSingle.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} por apenas ${lista[x].toPriceSingle.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`
                 }
