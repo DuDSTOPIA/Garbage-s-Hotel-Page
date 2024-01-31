@@ -10,7 +10,7 @@
     border-radius: 5px;
 }
 
-.reservation_div {
+.reservation_div, .reservation_div1, .reservation_div2, .reservation_div3 {
     display: flex;
     align-items: center;
 }

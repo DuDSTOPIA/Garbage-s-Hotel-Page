@@ -9,7 +9,9 @@
 @import url("styles/Accomodations_page/Accomodations.css");
 @import url("styles/Accomodations_page/slider.css");
 @import url("styles/carrer/career.css");
-@import url("/styles/reservation_page/reservation.css");
+@import url("styles/login/login.css");
+@import url("styles/modal.css");
+
 
 :root {
     --main-background: #D3D5D8;

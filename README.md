@@ -8,7 +8,7 @@ descidi fazer uma web page de um hotel ficticio para treinar meus conhecimantos 
 <p>Ainda não esta terminando, mas logo vai estar!</p>
 
 
-[ ] Adicionar nome, telefone e email no formulario de orçamento de salões
 [ ] adicionar mais informações nas fotos de apresetações da pagina principal
 [ ] Corrigir os posicionamentos das entradas do fgormulario de reservas na pagina acomodações
-[ ] mudar o nome da pagina sobre para about
+[ ] Fazer os botoes de reservas funcionarem
+[ ] Concertar o carrossel

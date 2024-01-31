@@ -14,7 +14,7 @@
     1px -1px 0 var(--nav-bar-background);
 }
 
-.all_rooms {
+#all_rooms {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
