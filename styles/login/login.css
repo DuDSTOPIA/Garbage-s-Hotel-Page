@@ -41,6 +41,7 @@
 .tab_container_form {
     height: 50vh;
     background-color: rgb(0,0,0, 0.5);
+    border-radius: 10%;
 }
 
 .tab_container_form_login {
