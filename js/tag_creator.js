@@ -7,6 +7,26 @@ export function nav(fatherTag, classs) {
     fatherTag.appendChild(nav)
 }
 
+export function section(fatherTag, classs, id) {
+    const tag = document.querySelector(`.${fatherTag}`);
+
+    const section = document.createElement('section');
+    section.className = classs
+    section.id = id
+    tag.appendChild(section)
+
+}
+
+export function a(fatherTag, classs, href, text) {
+    const tag = document.querySelector(`.${fatherTag}`);
+
+    const a = document.createElement('a')
+    a.className = classs
+    a.href = href
+    a.innerText = text
+    tag.appendChild(a)
+}
+
 export function div(fatherTag, classs) {
     const tag = document.querySelector(`.${fatherTag}`);
     const div = document.createElement('div');

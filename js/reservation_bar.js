@@ -1,4 +1,3 @@
-import { modal } from "./modal.js"
 import {nav, div, h1, input, button} from "./tag_creator.js"
 
 export function reservation_bar() {
