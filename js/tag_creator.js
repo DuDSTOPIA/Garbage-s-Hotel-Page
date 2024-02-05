@@ -1,14 +1,14 @@
 
 
-export function nav(fatherTag, classs) {
+export function nav(place, classs) {
     
     const nav = document.createElement('nav');
     nav.className = classs;
-    fatherTag.appendChild(nav)
+    place.appendChild(nav)
 }
 
-export function section(fatherTag, classs, id) {
-    const tag = document.querySelector(`.${fatherTag}`);
+export function section(place, classs, id) {
+    const tag = document.querySelector(`.${place}`);
 
     const section = document.createElement('section');
     section.className = classs
@@ -17,8 +17,8 @@ export function section(fatherTag, classs, id) {
 
 }
 
-export function a(fatherTag, classs, href, text) {
-    const tag = document.querySelector(`.${fatherTag}`);
+export function a(place, classs, href, text) {
+    const tag = document.querySelector(`.${place}`);
 
     const a = document.createElement('a')
     a.className = classs
@@ -27,23 +27,37 @@ export function a(fatherTag, classs, href, text) {
     tag.appendChild(a)
 }
 
-export function div(fatherTag, classs) {
-    const tag = document.querySelector(`.${fatherTag}`);
+export function div(place, classs) {
+    const tag = document.querySelector(`.${place}`);
     const div = document.createElement('div');
     div.className = classs;
     tag.appendChild(div)
 }
 
-export function h1(fatherTag, classs, text) {
-    const tag = document.querySelector(`.${fatherTag}`);
+export function h1(place, classs, text) {
+    const tag = document.querySelector(`.${place}`);
     const h1 = document.createElement('h1');
     h1.className = classs
     h1.innerText = text
     tag.appendChild(h1)
 }
+export function h2(place, classs, text) {
+    const tag = document.querySelector(`.${place}`);
+    const h2 = document.createElement('h2');
+    h2.className = classs
+    h2.innerText = text
+    tag.appendChild(h2)
+}
+export function h3(place, classs, text) {
+    const tag = document.querySelector(`.${place}`);
+    const h3 = document.createElement('h3');
+    h3.className = classs
+    h3.innerText = text
+    tag.appendChild(h3)
+}
 
-export function input(fatherTag, classs, id, type, value, min, max) {
-    const tag = document.querySelector(`.${fatherTag}`);
+export function input(place, classs, id, type, value, min, max) {
+    const tag = document.querySelector(`.${place}`);
     
     const input = document.createElement('input')
     input.className = classs
@@ -55,13 +69,21 @@ export function input(fatherTag, classs, id, type, value, min, max) {
     tag.appendChild(input)
 }
 
-export function button(fatherTag, classs, text, id, type) {
-    const tag = document.querySelector(`.${fatherTag}`);
+export function button(place, classs, text, id, type) {
+    const tag = document.querySelector(`.${place}`);
     const button = document.createElement('button');
     button.className = classs
     button.id = id
     button.type = type
     button.innerText = text
     tag.appendChild(button)
+    
+}
 
+export function img(place, classs, src) {
+    const tag = document.querySelector(`.${place}`);
+    const img = document.createElement('img');
+    img.className = classs
+    img.src = src
+    tag.appendChild(img)
 }

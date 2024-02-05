@@ -14,17 +14,17 @@
     1px -1px 0 var(--nav-bar-background);
 }
 
-#all_rooms {
+.all_rooms {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 5vw 5vw 20vh 0;
 }
 
-.roomBox {
+.roomBox0, .roomBox1, .roomBox2, .roomBox3, .roomBox4, .roomBox5 {
     margin: 1vh 0 15vh 0;
 }
-.room_div {
+.room_div0, .room_div1, .room_div2, .room_div3, .room_div4, .room_div5{
     width: 20vw;
     height: 25vh;
     background-color: var(--address-background);
@@ -34,11 +34,11 @@
     box-shadow: 3px 3px 20px var(--address-background),
     -3px -3px 20px var(--address-background);
     background-position: center;
-    margin: 2vh 4vw 3vh 15vw;
+    margin: 1vh 4vw 15vh 15vw;
     min-width: 18vw;
 }
 
-.room_div:hover {
+.room_div0:hover, .room_div1:hover, .room_div2:hover, .room_div3:hover, .room_div4:hover, .room_div5:hover {
     transform: perspective(10cm) rotateX(5deg) rotate(-5deg) rotateY(8deg);
     box-shadow: 3px 3px 20px var(--text-shadow),
     -3px -3px 20px var(--text-shadow);
@@ -63,7 +63,7 @@
     margin: 0 0 2vh 0;
 }
 
-.room_div_img_div {
+.room_div_img_div0, .room_div_img_div1, .room_div_img_div2, .room_div_img_div3, .room_div_img_div4, .room_div_img_div5 {
     display: flex;
 }
 
@@ -91,7 +91,7 @@
 
 /* Reservation div of accomodation */
 
-.room_div_reservation {
+.room_div_reservation0, .room_div_reservation1, .room_div_reservation2, .room_div_reservation3, .room_div_reservation4, .room_div_reservation5 {
     background-color: var(--address-background);
     height: 10vh;
     border: solid 2px var(--text-shadow);
@@ -99,20 +99,26 @@
     width: 20vw;
     flex-wrap: wrap;  
     font-size: 0.8em;
-    visibility: hidden;
+    visibility: visible;
 }
 
 .room_div:hover .room_div_reservation {
     visibility: visible;
 }
 
-.block01 {
+.Reservation_hide_container0, .Reservation_hide_container1, .Reservation_hide_container2, .Reservation_hide_container3, .Reservation_hide_container4, .Reservation_hide_container5 {
     display:flex;
     justify-content: space-evenly;
     align-items: center;
     height: 10vh;
     width: 20vw;
     flex-wrap: wrap;
+}
+
+.Reservation_hide_container_adults0, .Reservation_hide_container_adults1, .Reservation_hide_container_adults2, .Reservation_hide_container_adults3, .Reservation_hide_container_adults4, .Reservation_hide_container_adults5,  .Reservation_hide_container_kids0, .Reservation_hide_container_kids1, .Reservation_hide_container_kids2, .Reservation_hide_container_kids3, .Reservation_hide_container_kids4, .Reservation_hide_container_kids5{
+    display: flex;
+    align-items: center;
+    justify-items: auto;
 }
 
 .room_reservation_title {

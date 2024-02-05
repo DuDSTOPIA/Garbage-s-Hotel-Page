@@ -2,6 +2,7 @@ import { navegation_bar } from "./navBar.js"
 import { footer } from "./footer.js"
 import { reservation_bar } from "./reservation_bar.js"
 import {wallpaperSlider} from "./slider.js";
+import { section, div, h1, h3, img, h2, input, button } from "./tag_creator.js";
 
 // TODAS AS FUNÇÕES DA PAGINA ACCOMODATION ESTAO DIRETAMENTE LIGADAS A ESSE ARQUIVO
 
@@ -9,31 +10,28 @@ import {wallpaperSlider} from "./slider.js";
 function all_rooms(lista, id) {    
     
     lista.forEach(item => {
-        const div = document.createElement('div')
-        div.className = 'roomBox'
-        let model = `<div class="room_div">
-                        <div class="room_div_info">
-                            <h1 class="room_div_title">${item.model}</h1>
-                            <h3 class="room_div_text">${item.text}</h3>
-                            <div class="room_div_img_div">
-                                <img class="room_div_img" src="${item.img}" alt="">
-                                <h2 class="room_div_price">De ${item.fromPriceSingle.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} por apenas ${item.toPriceSingle.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</h2>
-                            </div>
-                        </div>
-                        <div class="room_div_reservation" >
-                            <div class="block01">
-                                <h1 class="room_reservation_title">Quartos</h1>
-                                <input class="acomodation_room_input" type="number" name="Quartos" id="acomodation_room_number" value="1" min="1" max="3">
-                                <h1 class="room_reservation_title">Adultos</h1>
-                                <input class="acomodation_room_adult_input" type="number" name="Adultos" id="acomodation_room_guests" value="1" min="1" max="${item.maxAdult}">
-                                <h1 class="room_reservation_title">Crianças</h1>
-                                <input class="acomodation_room_input" type="number" name="Quartos" id="acomodation_room_kids" value="0" min="0" max="${item.maxChildren}">
-                                <button class="acomodation_room_button" type="submit">Reservar</button>
-                            </div>
-                        </div>
-                    </div>`
-            id.appendChild(div)
-            div.innerHTML = model     
+                   
+            section('all_rooms', `roomBox${lista.indexOf(item)}`)
+                    section(`roomBox${lista.indexOf(item)}`, `room_div${lista.indexOf(item)}`, 'room_div');
+                        div(`room_div${lista.indexOf(item)}`, `room_div_info${lista.indexOf(item)}`);
+                            h1(`room_div_info${lista.indexOf(item)}`, 'room_div_title', `${item.model}`);
+                            h3(`room_div_info${lista.indexOf(item)}`, 'room_div_text', `${item.text}`);
+                            div(`room_div_info${lista.indexOf(item)}`, `room_div_img_div${lista.indexOf(item)}`);
+                                img(`room_div_img_div${lista.indexOf(item)}`, 'room_div_img', `${item.img}`);
+                                h2(`room_div_img_div${lista.indexOf(item)}`, 'room_div_price', `De ${item.fromPriceSingle.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} por apenas ${item.toPriceSingle.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`);
+                        div(`room_div${lista.indexOf(item)}`, `room_div_reservation${lista.indexOf(item)}`);
+                            div(`room_div_reservation${lista.indexOf(item)}`, `Reservation_hide_container${lista.indexOf(item)}`);
+                                div(`Reservation_hide_container${lista.indexOf(item)}`, `Reservation_hide_container_adults${lista.indexOf(item)}`)
+                                    h1(`Reservation_hide_container_adults${lista.indexOf(item)}`, 'room_reservation_title', 'Quartos');
+                                    input(`Reservation_hide_container_adults${lista.indexOf(item)}`, 'acomodation_room_input', 'acomodation_room_input', 'number', 1, 1, 3);
+                                    h1(`Reservation_hide_container${lista.indexOf(item)}`, 'room_reservation_title', 'Adultos');
+                                    input(`Reservation_hide_container${lista.indexOf(item)}`, 'acomodation_room_adult_input', 'acomodation_room_guests', 'number', 1, 1, `${item.maxAdult}`);
+                                div(`Reservation_hide_container${lista.indexOf(item)}`, `Reservation_hide_container_kids${lista.indexOf(item)}`)
+                                    h1(`Reservation_hide_container_kids${lista.indexOf(item)}`, 'room_reservation_title', 'Crianças');
+                                    input(`Reservation_hide_container_kids${lista.indexOf(item)}`, 'acomodation_room_input', 'acomodation_room_kids', 'number', 0, 0, `${item.maxChildren}` );
+                                    button(`Reservation_hide_container_kids${lista.indexOf(item)}`, 'reservation_button', 'Reservar', 'reservation_button', 'submit')
+                                
+           
     })
     // getElementByClassName pega todas as ocorrencias de classes com o mesmo nome e coloca em um array
     let currentApartamentBox = document.getElementsByClassName('acomodation_room_adult_input');
@@ -90,5 +88,5 @@ reservation_bar()
 // GERA O CARROSSEL DA PAGINA
 var box = document.querySelector('.wallpaper_slider');
 let images = ['/img/img_slider/sala_reuniao01.jpg', '/img/img_slider/sala_reuniao02.jpg', '/img/img_slider/sala_reuniao03.jpg', '/img/img_slider/sala_reuniao04.jpg', '/img/img_slider/sala_reuniao05.jpg', '/img/img_slider/sala_reuniao06.jpg', '/img/img_slider/sala_reuniao07.jpg', '/img/img_slider/sala_reuniao08.jpg', '/img/img_slider/sala_reuniao09.jpg', '/img/img_slider/sala_reuniao10.jpg']
-console.log(images)
+
 const slider = new wallpaperSlider(images, box)
