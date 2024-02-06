@@ -99,10 +99,10 @@
     width: 20vw;
     flex-wrap: wrap;  
     font-size: 0.8em;
-    visibility: visible;
+    visibility: hidden;
 }
 
-.room_div:hover .room_div_reservation {
+.room_div0:hover .room_div_reservation0, .room_div1:hover .room_div_reservation1, .room_div2:hover .room_div_reservation2, .room_div3:hover .room_div_reservation3, .room_div4:hover .room_div_reservation4, .room_div5:hover .room_div_reservation5 {
     visibility: visible;
 }
 

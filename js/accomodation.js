@@ -7,7 +7,7 @@ import { section, div, h1, h3, img, h2, input, button } from "./tag_creator.js";
 // TODAS AS FUNÇÕES DA PAGINA ACCOMODATION ESTAO DIRETAMENTE LIGADAS A ESSE ARQUIVO
 
 // GERA TODOS OS QUARTOS COM FEATURES NESCESSARIAS
-function all_rooms(lista, id) {    
+function all_rooms(lista) {    
     
     lista.forEach(item => {
                    
@@ -78,9 +78,9 @@ let roomsModels = [
     {model:'Flat', text:'Modelo com 01 cama de casal, 02 cama de solteiro, mini-cozinha, sofá, tv e ar condicionado', img:'/img/flat.jpg', fromPriceSingle: 330.00, toPriceSingle: 310.00, fromPriceDouble: 410.00, toPriceDouble: 430.00, fromPriceTriple: 530.00, toPriceTriple: 510.00, fromPriceQuadruple: 600.00, toPriceQuadruple: 580.00, maxAdult: 4, maxChildren: 4},
     {model:'Master', text:'Modelo com 01 cama de casal, sofá, tv, ar condicionado e hidromassagem', img:'/img/master.jpg', fromPriceSingle: 400.00, toPriceSingle: 380.00, fromPriceDouble: 520.00, toPriceDouble: 500.00, maxAdult: 2, maxChildren: 2}   
 ]
-const theRooms = document.getElementById('all_rooms')
+
 //FUNÇÕES A SEREM EXECUTADAS
-all_rooms(roomsModels, theRooms)
+all_rooms(roomsModels)
 navegation_bar()
 footer()
 reservation_bar()

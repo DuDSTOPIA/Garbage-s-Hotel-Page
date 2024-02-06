@@ -66,6 +66,7 @@ export function input(place, classs, id, type, value, min, max) {
     input.setAttribute('value', value)
     input.setAttribute('min', min)
     input.setAttribute('max',max)
+    input.setAttribute('style', 'color: #DC4400')
     tag.appendChild(input)
 }
 
